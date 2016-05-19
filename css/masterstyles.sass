@@ -1,0 +1,318 @@
+@import "grids.sass"
+
+//colors
+$trans: rgba(0, 0, 0, 0.5)
+$orange:#cf5c3f
+$greydark:#666
+
+body,h1,h2,h3,h4,h5,h6,p,div,nav,footer
+  padding: 0
+  margin: 0
+
+a
+  text-decoration: none
+
+.body
+  width: 100%
+  font-family: segoe ui light
+  font-size: 95%
+
+.mainheader
+  position: fixed
+  width: 100%
+  height: 80px
+  max-height: 85px
+  min-height: 55px
+  background-color:$greydark
+  z-index: 10
+  box-shadow: 0 5px 15px #000
+
+.navi
+  position: absolute
+  height: 100%
+
+.navi ul
+  height: 100%
+  margin: 0
+  display: flex
+
+.navi li
+  height: 100%
+  list-style-type: none
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  .active
+    background-color: darken($orange, 20%)
+    box-shadow: 0 0 15px $greydark
+
+.navi li a
+  color: #fff
+  text-align: center
+  width: 63px
+  flex-direction: column
+  justify-content: center
+  padding: 40% 20px
+  transition: linear 0.40s
+
+.navi li a:hover
+  background-color: $orange
+  text-shadow: none
+  box-shadow: 0 0 15px $greydark
+
+.box-logo
+    position: absolute
+    right: 5%
+    width: 60px
+    height: 60px
+    top: 10%
+    transform: translateX(-50%)
+
+    .box1
+        border: solid white 5px
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        border-top-style: hidden
+
+        .box2
+            border: solid white 5px
+            width: 80%
+            height: 80%
+            border-radius: 50%
+            border-left-style: hidden
+
+            .box3
+                border: solid white 5px
+                width: 60%
+                height: 60%
+                border-radius: 50%
+                border-bottom-style: hidden
+
+.banner
+  margin: 0
+  position: relative
+  top: 70px
+  height: 95vh
+  min-height: 500px
+  width: 100%
+  background-image: url(../images/time.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+  color: #fff
+
+.mask
+    display: none
+
+.welcomenote
+  position: absolute
+  right: 2%
+  top: 1.2%
+  margin: 0
+  padding: 0
+
+.updates
+  width: 90%
+  min-height: 40vh
+  display: flex
+  position: absolute
+  left: 50%
+  bottom: 8%
+  transform: translate(-50%)
+  animation: bounce ease-in-out 3.0s 1
+
+.updates content
+  width: 33%
+  margin: 0.166%
+  padding: 5px
+
+.t-up
+  background-color:transparentize(darken($orange, 40%), 0.4)
+.e-up
+  background-color: transparentize(darken($orange, 30%), 0.4)
+.upnext
+  background-color: transparentize(darken($orange, 20%), 0.5)
+
+.maincontent
+  position: relative
+  top: 70px
+  background:
+    repeat: no-repeat
+    size: cover
+    attachment: fixed
+
+  h4,hr,p
+    margin: 3%
+
+.classes,.g-event
+  background-color: white
+  position: relative
+  border-bottom: solid $orange 5px
+
+  h2
+    padding-left: 15%
+    color: $orange
+
+.classes
+    background-color:rgb(36, 37, 37)
+    color: white
+    border-top: solid $orange 2px
+
+    img
+        width: 70%
+
+    p
+        text-align: center
+        width: 70%
+
+
+.g-event
+    background-color: rgb(36, 37, 37)
+    //background-image: url(../images/lovetape.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+
+.contain
+    margin: 5% 0
+    width: 90%
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+
+.bottomer
+    position: relative
+    top: 70px
+    height: 60vh
+    min-height: 400px
+    background-color: black
+
+    .footer
+        top: 30%
+
+        .col
+            background-color: rgb(111, 111, 111)
+            color: white
+
+            p
+                font-size: 200%
+                text-align: center
+
+            ul
+                position: relative
+                margin-left: 2%
+                padding-left: 0
+                //left: -15%
+
+                li
+                    list-style-type: none
+
+                    a
+                        color: rgb(88, 25, 9)
+                        font-weight: bold
+
+
+
+@media only screen and (max-width: 840px)
+    #event5
+        width: 100%
+
+    .bottomer
+        .footer
+            width: 95%
+
+@media only screen and (max-width: 750px)
+    .classes
+        .objs
+            width: 98%
+
+        img
+            width: 70%
+
+        p
+            text-align: center
+            width: 90%
+
+    .g-event
+        .objs
+            width: 100%
+
+    .bottomer
+        .footer
+            width: 98%
+
+            .contacts,.more
+                width: 50%
+
+            .about
+                width: 50%
+
+            ul
+                text-align: center
+
+
+@media only screen and (max-width: 640px)
+    .mainheader
+        position: relative
+        height:160px
+        max-height: 160px
+        z-index: 1
+        .navi
+            position: absolute
+            width: 80%
+            height: 100%
+
+            ul
+                height: 100%
+                width: 100%
+                margin: 0
+                display: flex
+                flex-direction: column
+
+                li
+                    //height:30px
+                    width: 100%
+                    list-style-type: none
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+
+                    a
+                      color: #fff
+                      font-size: 130%
+                      font-weight: lighter
+                      text-align: center
+                      width: 100%
+                      padding: 2%
+                      transition: linear 0.40s
+
+
+        .box-logo
+            right: 1%
+
+    .maincontent,.bottomer,.banner
+        top: 160px
+
+    .banner
+        .welcomenote
+            position: relative
+            left: 50%
+            top: 30%
+            transform: translate(-50%,-50%)
+            text-align: center
+            font-size: 250%
+            text-shadow: 5px 5px 5px black
+
+            h1
+                font-weight: lighter
+
+        .updates
+            display: none
+
+        .mask
+            display: block
+            position: absolute
+            height: 95vh
+            width: 100%
+            background-color: rgba(0, 0, 0, 0.49)

@@ -1,0 +1,435 @@
+body {
+  font-family: Segoe ui light;
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid::after, .row::after {
+  clear: both;
+}
+
+.col {
+  padding: 0.1em;
+  margin: 1px;
+  background: white;
+  border-radius: 0px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+[class*='col-'] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.centered {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body, h1, h2, h3, h4, h5, h6, p, div, nav, footer {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  width: 100%;
+  font-family: segoe ui light;
+  font-size: 95%;
+}
+
+.mainheader {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  max-height: 85px;
+  min-height: 55px;
+  background-color: #666;
+  z-index: 10;
+  box-shadow: 0 5px 15px #000;
+}
+
+.navi {
+  position: absolute;
+  height: 100%;
+}
+
+.navi ul {
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.navi li {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navi li .active {
+  background-color: #863622;
+  box-shadow: 0 0 15px #666;
+}
+
+.navi li a {
+  color: #fff;
+  text-align: center;
+  width: 63px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40% 20px;
+  transition: linear 0.4s;
+}
+
+.navi li a:hover {
+  background-color: #cf5c3f;
+  text-shadow: none;
+  box-shadow: 0 0 15px #666;
+}
+
+.box-logo {
+  position: absolute;
+  right: 5%;
+  width: 60px;
+  height: 60px;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.box-logo .box1 {
+  border: solid white 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top-style: hidden;
+}
+
+.box-logo .box1 .box2 {
+  border: solid white 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border-left-style: hidden;
+}
+
+.box-logo .box1 .box2 .box3 {
+  border: solid white 5px;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  border-bottom-style: hidden;
+}
+
+.banner {
+  margin: 0;
+  position: relative;
+  top: 70px;
+  height: 95vh;
+  min-height: 500px;
+  width: 100%;
+  background-image: url(../images/time.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.mask {
+  display: none;
+}
+
+.welcomenote {
+  position: absolute;
+  right: 2%;
+  top: 1.2%;
+  margin: 0;
+  padding: 0;
+}
+
+.updates {
+  width: 90%;
+  min-height: 40vh;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translate(-50%);
+  animation: bounce ease-in-out 3s 1;
+}
+
+.updates content {
+  width: 33%;
+  margin: 0.166%;
+  padding: 5px;
+}
+
+.t-up {
+  background-color: rgba(53, 21, 13, 0.6);
+}
+
+.e-up {
+  background-color: rgba(94, 38, 23, 0.6);
+}
+
+.upnext {
+  background-color: rgba(134, 54, 34, 0.5);
+}
+
+.maincontent {
+  position: relative;
+  top: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.maincontent h4, .maincontent hr, .maincontent p {
+  margin: 3%;
+}
+
+.classes, .g-event {
+  background-color: white;
+  position: relative;
+  border-bottom: solid #cf5c3f 5px;
+}
+
+.classes h2, .g-event h2 {
+  padding-left: 15%;
+  color: #cf5c3f;
+}
+
+.classes {
+  background-color: #242525;
+  color: white;
+  border-top: solid #cf5c3f 2px;
+}
+
+.classes img {
+  width: 70%;
+}
+
+.classes p {
+  text-align: center;
+  width: 70%;
+}
+
+.g-event {
+  background-color: #242525;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contain {
+  margin: 5% 0;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bottomer {
+  position: relative;
+  top: 70px;
+  height: 60vh;
+  min-height: 400px;
+  background-color: black;
+}
+
+.bottomer .footer {
+  top: 30%;
+}
+
+.bottomer .footer .col {
+  background-color: #6f6f6f;
+  color: white;
+}
+
+.bottomer .footer .col p {
+  font-size: 200%;
+  text-align: center;
+}
+
+.bottomer .footer .col ul {
+  position: relative;
+  margin-left: 2%;
+  padding-left: 0;
+}
+
+.bottomer .footer .col ul li {
+  list-style-type: none;
+}
+
+.bottomer .footer .col ul li a {
+  color: #581909;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 840px) {
+  #event5 {
+    width: 100%;
+  }
+  .bottomer .footer {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .classes .objs {
+    width: 98%;
+  }
+  .classes img {
+    width: 70%;
+  }
+  .classes p {
+    text-align: center;
+    width: 90%;
+  }
+  .g-event .objs {
+    width: 100%;
+  }
+  .bottomer .footer {
+    width: 98%;
+  }
+  .bottomer .footer .contacts, .bottomer .footer .more {
+    width: 50%;
+  }
+  .bottomer .footer .about {
+    width: 50%;
+  }
+  .bottomer .footer ul {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mainheader {
+    position: relative;
+    height: 160px;
+    max-height: 160px;
+    z-index: 1;
+  }
+  .mainheader .navi {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+  }
+  .mainheader .navi ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainheader .navi ul li {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mainheader .navi ul li a {
+    color: #fff;
+    font-size: 130%;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    transition: linear 0.4s;
+  }
+  .mainheader .box-logo {
+    right: 1%;
+  }
+  .maincontent, .bottomer, .banner {
+    top: 160px;
+  }
+  .banner .welcomenote {
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 250%;
+    text-shadow: 5px 5px 5px black;
+  }
+  .banner .welcomenote h1 {
+    font-weight: lighter;
+  }
+  .banner .updates {
+    display: none;
+  }
+  .banner .mask {
+    display: block;
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.49);
+  }
+}
